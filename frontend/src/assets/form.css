@@ -1,0 +1,87 @@
+div.button-group {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 90%;
+}
+div.contain {
+  background-color: #ffffffef;
+  padding: 80px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  margin: auto;
+}
+h1 {
+  margin-bottom: 60px;
+  color: #ff7357;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],select {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  transition: border-color 0.3s ease;
+}
+
+input[type='text']:focus,
+input[type='email'],
+:focus input[type='password']:focus {
+  outline: none;
+  border-color: #ff7357;
+}
+
+button[type='submit'],
+.button {
+  box-sizing: border-box; /* Include padding and border in the total width and height */
+  display: block;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #ff7357;
+  width: 42%;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Center the text within the button */
+  text-decoration: none; /* Remove default link underline */
+  font-size: small;
+}
+
+button[type='submit']:hover,
+.button:hover {
+  background-color: #ff502d;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.upload-label {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff7357;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: small;
+}
+
+.upload-input {
+  display: none;
+}
